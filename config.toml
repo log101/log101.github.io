@@ -26,7 +26,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   description = "log101's blog"
   themeColor = "#494f5c"
 
-  homeSubtitle = "\"Orada, soğuk ve mütemadiyen dönen yaşlı başlı yıldızlar, önce israillenmiş sonra pislik içinde bırakılmış gezegenler, Kadimler mirası kuyruklu gök cisimleri vardı; birbirlerinden bağımız görünseler de modellenmesi neredeyse imkansız bir örgü içerisinde…\""
+  homeSubtitle = "\"Orada, soğuk ve mütemadiyen dönen yaşlı başlı yıldızlar, önce gasp edilmiş sonra pislik içinde bırakılmış gezegenler, Kadimler mirası kuyruklu gök cisimleri vardı; birbirlerinden bağımız görünseler de modellenmesi neredeyse imkansız bir örgü içerisinde…\""
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = false  # Set "text-align: justify" to `.content`.
@@ -56,6 +56,21 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     weight = 10
 
   [[menu.main]]
-    name = "About"
+    name = "Github"
     url = "about-hugo/"
     weight = 20
+
+  [[menu.main]]
+    name = "CV"
+    url = "about-hugo/"
+    weight = 30
+
+  [[menu.main]]
+    name = "Stories"
+    url = "about-hugo/"
+    weight = 40
+
+  [[menu.main]]
+    name = "Running"
+    url = "about-hugo/"
+    weight = 50
