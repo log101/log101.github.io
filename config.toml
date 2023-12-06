@@ -1,6 +1,6 @@
 baseURL = "https://log101.github.io"
-languageCode = "en-us"
-defaultContentLanguage = "en"
+languageCode = "tr"
+defaultContentLanguage = "tr"
 title = "log101"
 theme = "hermit"
 # enableGitInfo = true
@@ -9,6 +9,23 @@ pygmentsUseClasses  = true
 
 rssLimit = 10  # Maximum number of items in the RSS feed.
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+
+[languages]
+  [languages.tr]
+    disabled = false
+    languageCode = 'tr'
+    languageDirection = 'ltr'
+    languageName = 'Turkish'
+    title = 'Log101'
+    weight = 10
+
+  [languages.en]
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Log101'
+    weight = 20
 
 [author]
   name = "Furkan Erdem"
@@ -51,26 +68,35 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 [menu]
 
   [[menu.main]]
-    name = "Posts"
+    identifier = 'posts'
+    name = "Yazılar"
     url = "posts/"
     weight = 10
 
   [[menu.main]]
-    name = "Github"
-    url = "about-hugo/"
+    identifier = 'projects'
+    name = "Projeler"
+    url = "about/"
     weight = 20
 
   [[menu.main]]
-    name = "CV"
-    url = "about-hugo/"
+    name = "Github"
+    url = "about/"
     weight = 30
 
   [[menu.main]]
-    name = "Stories"
-    url = "about-hugo/"
+    name = "CV"
+    url = "about/"
     weight = 40
 
   [[menu.main]]
-    name = "Running"
-    url = "about-hugo/"
+    identifier = 'stories'
+    name = "Hikayeler"
+    url = "about/"
     weight = 50
+
+  [[menu.main]]
+    identifier = 'running'
+    name = "Koşu"
+    url = "about/"
+    weight = 60
