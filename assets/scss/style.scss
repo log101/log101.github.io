@@ -18,6 +18,21 @@
     }
 }
 
+.site-main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: auto;
+    font-size: 1.5rem;
+
+    @media (max-width: 448px) {
+        margin-left: 24px;
+    }
+}
+
 #home-center {
     display: flex;
     flex-direction: column;
@@ -51,6 +66,8 @@
 }
 
 #home-footer {
+    width: 100%;
+
     p {
         color: #5C5C5C;
         font-family: Inter;
