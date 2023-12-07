@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    width: 400px;
+    max-width: 400px;
     margin: auto;
     font-size: 1.5rem;
 
@@ -23,7 +23,7 @@
     flex-direction: column;
     flex-grow: 1;
     align-items: flex-start;
-    justify-content: center;
+    margin-top: 10vh;
 }
 
 #home-title {
@@ -108,6 +108,23 @@
 
 .posts-group {
     width: 400px;
+}
+
+.back-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+    a {
+        text-decoration: none;
+        color: #252525;
+
+        &:hover {
+            text-decoration: underline;
+            color: #151515;
+        }
+    }
 }
 
 .post-item {

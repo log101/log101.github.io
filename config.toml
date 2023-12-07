@@ -8,7 +8,7 @@ pygmentsCodefences  = true
 pygmentsUseClasses  = true
 
 rssLimit = 10  # Maximum number of items in the RSS feed.
-enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+enableEmoji = true
 
 [languages]
   [languages.tr]
@@ -27,9 +27,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     title = 'Log101'
     weight = 20
 
-[author]
-  name = "Furkan Erdem"
-
 [taxonomies]
   tag = "tags"
 
@@ -40,10 +37,10 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "log101's blog"
+  description = "log101'in sayfası"
   themeColor = "#494f5c"
 
-  homeSubtitle = "\"Orada, soğuk ve mütemadiyen dönen yaşlı başlı yıldızlar, önce gasp edilmiş sonra pislik içinde bırakılmış gezegenler, Kadimler mirası kuyruklu gök cisimleri vardı; birbirlerinden bağımız görünseler de modellenmesi neredeyse imkansız bir örgü içerisinde…\""
+  homeSubtitle = ""
 
   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
   justifyContent = false  # Set "text-align: justify" to `.content`.
@@ -54,6 +51,9 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
+
+  [[params.author]]
+    name = "Furkan Erdem"
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.

@@ -1,5 +1,5 @@
 +++
-title = "Yazmak Güzeldir"
+title = "The Excellent Hugo"
 tags = [
     "go",
     "golang",

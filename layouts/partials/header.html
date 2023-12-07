@@ -1,9 +1,8 @@
 	<header id="site-header" class="animated slideInUp">
-		<div class="hdr-wrapper section-inner">
-			<div class="hdr-left">
-				<div class="site-branding">
+		<div>
+			<div class="back-title">
 					<a href="{{.Site.BaseURL}}">{{ i18n "backTitle" | safeHTML }}</a>
-				</div>
+					<h1 id="home-title">{{ i18n ( lower .Title ) }}</h1>
 			</div>
 			<div class="hdr-right hdr-icons">
 				{{ if (or .Params.images .Params.featuredImg) -}}
