@@ -18,17 +18,8 @@
 				{{ partialCached "menu.html" . }}
 			</nav>
 		</div>
-		<div id="site-footer">
-			{{ if .IsTranslated }}
-			<nav class="LangNav">
-			{{ range .Translations }}
-				<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-			{{ end}}
-			</nav>
-			{{ end }}
-			<p>
-				&copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}
-			</p>
-
+	</div>
+	<div id="site-footer">
+		{{ partial "footer.html" . }}
 	</div>
 {{ end }}

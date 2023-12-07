@@ -171,6 +171,17 @@
 
 #site-footer {
     width: 400px;
+
+    #copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+#home-footer {
+    width: 400px;
 }
 
 [aria-disabled="true"] {

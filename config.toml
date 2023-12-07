@@ -16,7 +16,7 @@ paginate = 5
     disabled = false
     languageCode = 'tr'
     languageDirection = 'ltr'
-    languageName = 'Turkish'
+    languageName = 'Türkçe'
     title = 'Log101'
     weight = 10
 
