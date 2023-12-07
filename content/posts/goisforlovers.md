@@ -40,7 +40,15 @@ functions.
 
 Accessing a predefined variable "foo":
 
-    {{ foo }}
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("hello world")
+}
+```
 
 **Parameters are separated using spaces**
 

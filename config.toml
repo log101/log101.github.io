@@ -11,6 +11,21 @@ rssLimit = 10  # Maximum number of items in the RSS feed.
 enableEmoji = true
 paginate = 5
 
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'emacs'
+    tabWidth = 4
+
 [languages]
   [languages.tr]
     disabled = false
@@ -51,7 +66,7 @@ paginate = 5
   code_copy_button = true # Turn on/off the code-copy-button for code-fields
 
   # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
+  # customCSS = ["css/syntax.css"]
 
   [params.author]
     name = "Furkan Erdem"

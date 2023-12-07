@@ -8,10 +8,9 @@ tags = [
     "development",
 ]
 date = "2014-04-02"
-toc = true
 +++
 
-Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for
+Hugo and uses the excellent [Go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
 logic to be able to create a good static website. If you have used other
@@ -40,7 +39,9 @@ functions.
 
 Accessing a predefined variable "foo":
 
-    {{ foo }}
+```go
+{{ foo }} asdadasdasad
+```
 
 **Parameters are separated using spaces**
 
