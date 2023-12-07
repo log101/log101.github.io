@@ -151,7 +151,12 @@
     padding: 0; /* Remove default padding */
     margin: 0; /* Adjust margin as needed */
     justify-content: center; /* Center the pagination items */
+    align-items: center;
     font-family: Inter;
+    a {
+        text-decoration: none;
+        color: #252525;
+    }
 }
 
 .pagination .page-item {
@@ -166,4 +171,16 @@
 
 #site-footer {
     width: 400px;
+}
+
+[aria-disabled="true"] {
+    text-decoration: none !important;
+  }
+
+.page-item {
+    &.active {
+        a {
+            text-decoration: none !important;
+        }
+    }
 }

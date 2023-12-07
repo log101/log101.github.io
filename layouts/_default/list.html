@@ -20,10 +20,10 @@
 			</div>
 		</div>
 		{{ end }}
-		{{ template "_internal/pagination.html" . }}
 	</main>
 {{ end }}
 
 {{ define "footer" }}
+{{ partial "pagination.html" . }}
 {{ partial "footer.html" . }}
 {{ end }}
