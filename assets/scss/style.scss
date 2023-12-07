@@ -1,5 +1,11 @@
 @import "_syntax.scss";
 
+body {
+    font-family: Inter;
+    line-height: 1.4;
+    background-color: #ebf4f3;
+}
+
 #page {
     height: 100vh;
     margin: 0
@@ -31,10 +37,49 @@
 #home-title {
     color: #202020;
     font-family: Inter;
-    font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+#post-title {
+    color: #202020;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.post-header {
+    margin-bottom: 40px;
+}
+
+.post-meta {
+    margin-top: .5em;
+    span {
+        color: #303030;
+    }
+}
+
+.post-tags {
+    margin: 10px 0;
+    display: flex;
+    gap: 6px;
+
+    .tag {
+        font-size: .7em;
+        padding: 3px 14px;
+        text-transform: lowercase;
+        border: 1px solid;
+        margin-bottom: 6px;
+
+        a {
+            outline: none;
+            text-decoration: none;
+            color: #5C5C5C;
+        }
+    }
 }
 
 #home-nav {
@@ -120,7 +165,7 @@
 
     a {
         text-decoration: none;
-        color: #252525;
+        color: #656565;
 
         &:hover {
             text-decoration: underline;
@@ -200,4 +245,6 @@
 
 .content {
     max-width: 720px;
+    font-size: 1em;
+    color: #303030;
 }
