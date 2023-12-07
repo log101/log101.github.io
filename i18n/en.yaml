@@ -8,3 +8,5 @@
   translation: "Stories"
 - id: running
   translation: "Running"
+- id: backTitle
+  translation: "🞀 Back To Home"
