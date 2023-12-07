@@ -10,3 +10,5 @@
   translation: "Running"
 - id: backTitle
   translation: "🞀 Back To Home"
+- id: tags
+  translation: "Tags"

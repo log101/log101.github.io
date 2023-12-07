@@ -9,6 +9,7 @@ pygmentsUseClasses  = true
 
 rssLimit = 10  # Maximum number of items in the RSS feed.
 enableEmoji = true
+paginate = 5
 
 [languages]
   [languages.tr]
@@ -52,7 +53,7 @@ enableEmoji = true
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
 
-  [[params.author]]
+  [params.author]
     name = "Furkan Erdem"
 
   # Social Icons

@@ -1,5 +1,5 @@
 {{ define "header" }}
-{{ partialCached "header.html" . }}
+{{ partial "header.html" . }}
 {{ end }}
 
 {{ define "main" }}
@@ -9,19 +9,18 @@
 			{{ .Content }}
 		</div>
 		{{- end }}
-		{{- range .Data.Pages.GroupByDate "2006" }}
+		{{ range (.Paginate .Pages.ByPublishDate ).Pages }}
 		<div class="posts-group">
 			<div class="posts-list">
-				{{- range .Pages }}
 				<p class="post-item">
 					<a href="{{.Permalink}}">
 						<span class="post-title">{{.Title}}</span>
 					</a>
 				</p>
-				{{- end }}
 			</div>
 		</div>
-		{{- end }}
+		{{ end }}
+		{{ template "_internal/pagination.html" . }}
 	</main>
 {{ end }}
 

@@ -7,6 +7,6 @@
 	</nav>
 	{{ end }}
 	<p>
-		&copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}
+		&copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}
 	</p>
 </div>

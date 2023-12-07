@@ -144,3 +144,26 @@
         color: #787878;
     }
 }
+
+.pagination {
+    display: flex; /* Enable flexbox layout */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Adjust margin as needed */
+    justify-content: center; /* Center the pagination items */
+    font-family: Inter;
+}
+
+.pagination .page-item {
+    margin: 0; /* Adjust margin between items as needed */
+}
+
+.pagination .page-link {
+    display: block; /* Make the link fill the li element */
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin: 0 2px; /* Space out the page links */
+}
+
+#site-footer {
+    width: 400px;
+}
