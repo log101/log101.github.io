@@ -31,30 +31,10 @@
 	{{- end }}
 </head>
 
-<body id="page">
-	<div id="spotlight">
-		<div id="home-center">
-			{{ block "header" . -}}{{ end -}}
-			{{ block "main" . -}}{{ end -}}
-		</div>
-		<div id="site-footer">
-			{{ block "footer" . -}}{{ end }}
-		</div>
-	</div>
-
-	{{ $main := resources.Get "js/main.js" -}}
-	{{ if .Site.Params.code_copy_button | default true -}}
-		{{ $codeCopy := resources.Get "js/code-copy.js" -}}
-		{{ $script := slice $main $codeCopy | resources.Concat "js/bundle.js" | minify | fingerprint -}}
-		<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
-	{{ else -}}
-		{{ $script := $main | minify | fingerprint -}}
-		<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
-	{{ end }}
-
-	{{- if templates.Exists "partials/extra-foot.html" -}}
-	{{ partial "extra-foot.html" . }}
-	{{- end }}
+<body>
+	{{ block "header" . -}}{{ end -}}
+	{{ block "main" . -}}{{ end -}}
+	{{ block "footer" . -}}{{ end }}
 </body>
 
 </html>

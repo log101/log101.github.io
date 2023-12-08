@@ -1,24 +1,80 @@
 @import "_syntax.scss";
 
+$font-inter: 'Inter', sans-serif;
+$color-dark: #202020;
+$color-medium-dark: #303030;
+$color-grey: #5C5C5C;
+$color-light-dark: #252525;
+
+@mixin font-style-normal {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+%link-shared {
+    color: #252525;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 150%;
+    /* 60px */
+    text-decoration-line: underline;
+}
+
+%footer-shared {
+    width: 100%;
+
+    p {
+        color: #5C5C5C;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    a {
+        color: #5C5C5C;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 body {
     font-family: Inter;
     line-height: 1.4;
     background-color: #ebf4f3;
+    margin: 0;
 }
 
-#page {
-    height: 100vh;
-    margin: 0
-}
-
-#spotlight {
+#home-main {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
+    height: 100vh;
+
     max-width: 720px;
     margin: auto;
+
     font-size: 1.5rem;
 
     @media (max-width: 768px) {
@@ -29,7 +85,6 @@ body {
 #home-center {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     align-items: flex-start;
     margin-top: 10vh;
 }
@@ -97,52 +152,6 @@ body {
         text-decoration-line: underline;
     }
 
-}
-
-%link-shared {
-    color: #252525;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    /* 60px */
-    text-decoration-line: underline;
-}
-
-%footer-shared {
-    width: 100%;
-
-    p {
-        color: #5C5C5C;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-    }
-
-    a {
-        color: #5C5C5C;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
 }
 
 #home-footer {
