@@ -1,0 +1,55 @@
+@import "variables";
+
+#posts-body {
+    @include default-width;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+#posts-main {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+}
+
+#posts-header {
+    padding-top: 10vh;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+    a {
+        text-decoration: none;
+        color: #656565;
+
+        &:hover {
+            text-decoration: underline;
+            color: #151515;
+        }
+    }
+}
+
+#posts-footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+.post-item {
+    a {
+        color: $color-light-dark;
+        font-weight: 400;
+        line-height: 150%;
+        text-decoration-line: underline;
+        font-size: 30px;
+    }
+}
+

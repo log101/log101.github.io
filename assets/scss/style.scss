@@ -1,78 +1,21 @@
+@import "variables";
 @import "_syntax.scss";
 @import "home";
-
-$default-font: 'Inter', sans-serif;
-$color-dark: #202020;
-$color-medium-dark: #303030;
-$color-grey: #5C5C5C;
-$color-light-dark: #252525;
-
-@mixin font-style-normal {
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-%link-shared {
-    color: #252525;
-    font-family: Inter;
-    font-style: normal;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 150%;
-    /* 60px */
-    text-decoration-line: underline;
-}
-
-%footer-shared {
-    width: 100%;
-
-    p {
-        color: #5C5C5C;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-    }
-
-    a {
-        color: #5C5C5C;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
+@import "posts";
 
 body {
-    font-family: Inter;
+    font-family: $default-font;
     line-height: 1.4;
     background-color: #ebf4f3;
     margin: 0;
 }
 
-#post-title {
-    color: #202020;
-    font-family: Inter;
+#header-title {
+    color: $color-dark;
+    font-family: $default-font;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom: 0;
 }
 
 .post-header {
@@ -106,50 +49,38 @@ body {
     }
 }
 
-#home-footer {
-    @extend %footer-shared;
-}
-
 #site-footer {
-    @extend %footer-shared;
-}
+    width: 100%;
 
-.posts-group {
-    width: 400px;
-}
+    p {
+        color: #5C5C5C;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
 
-.back-title {
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
 
     a {
+        color: #5C5C5C;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        display: flex;
+        gap: 8px;
+        justify-content: center;
         text-decoration: none;
-        color: #656565;
 
         &:hover {
             text-decoration: underline;
-            color: #151515;
         }
-    }
-}
-
-.post-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    a {
-        @extend %link-shared;
-        font-size: 30px;
-    }
-
-    .post-day {
-        @extend %link-shared;
-        font-size: 30px;
-        text-decoration: none;
-        color: #787878;
     }
 }
 
@@ -186,10 +117,6 @@ body {
         align-items: center;
         justify-content: center;
     }
-}
-
-#home-footer {
-    width: 400px;
 }
 
 [aria-disabled="true"] {
