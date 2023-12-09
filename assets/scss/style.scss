@@ -22,33 +22,6 @@ body {
     margin-bottom: 40px;
 }
 
-.post-meta {
-    margin-top: .5em;
-    span {
-        color: #303030;
-    }
-}
-
-.post-tags {
-    margin: 10px 0;
-    display: flex;
-    gap: 6px;
-
-    .tag {
-        font-size: .7em;
-        padding: 3px 14px;
-        text-transform: lowercase;
-        border: 1px solid;
-        margin-bottom: 6px;
-
-        a {
-            outline: none;
-            text-decoration: none;
-            color: #5C5C5C;
-        }
-    }
-}
-
 #site-footer {
     width: 100%;
 
@@ -129,10 +102,4 @@ body {
             text-decoration: none !important;
         }
     }
-}
-
-.content {
-    max-width: 720px;
-    font-size: 1em;
-    color: #303030;
 }

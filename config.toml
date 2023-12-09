@@ -23,7 +23,7 @@ paginate = 5
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = 'emacs'
+    style = 'github'
     tabWidth = 4
 
 [languages]

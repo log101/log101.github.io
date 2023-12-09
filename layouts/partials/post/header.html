@@ -1,0 +1,5 @@
+<header id="post-header">
+        <a href="{{.Site.BaseURL}}">{{ i18n "backTitle" | safeHTML }}</a>
+        <h1 id="post-title">{{ .Title }}</h1>
+        <div class="post-meta"><span>{{ time.Format .Site.Params.dateform .Date }}</span></div>
+</header>
