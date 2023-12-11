@@ -1,6 +1,7 @@
 baseURL = "https://log101.github.io"
 languageCode = "tr"
 defaultContentLanguage = "tr"
+defaultContentLanguageInSubdir = true
 title = "log101"
 theme = "hermit"
 # enableGitInfo = true
@@ -30,10 +31,10 @@ paginate = 5
     [markup.goldmark.renderer]
       unsafe = true
 
-
 [languages]
   [languages.tr]
     disabled = false
+    contentDir = 'content/tr'
     languageCode = 'tr'
     languageDirection = 'ltr'
     languageName = 'Türkçe'
@@ -42,6 +43,7 @@ paginate = 5
 
   [languages.en]
     disabled = false
+    contentDir = 'content/tr'
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
