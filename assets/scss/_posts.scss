@@ -82,6 +82,10 @@
     }
 }
 
+.featured-image img {
+    width: 100%;
+}
+
 #posts-footer {
     display: flex;
     flex-direction: column;
@@ -116,6 +120,10 @@
             text-decoration-color: darkslateblue;
             outline-color: darkslateblue;
             color: slateblue;
+        }
+
+        img {
+            width: 100%;
         }
     }
 

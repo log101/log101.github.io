@@ -103,3 +103,21 @@ body {
         }
     }
 }
+
+blockquote {
+    border-left: .25em solid;
+    margin: 1em;
+    padding: 0 1em;
+    font-style: italic;
+
+    cite {
+      font-style: normal;
+      display: flex;
+      justify-content: end;
+      gap: 6px;
+
+      &::before {
+        content: "—— ";
+      }
+    }
+  }
