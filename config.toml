@@ -31,6 +31,7 @@ paginate = 5
     [markup.goldmark.renderer]
       unsafe = true
 
+staticDir = ['static']
 [languages]
   [languages.tr]
     disabled = false
@@ -40,6 +41,7 @@ paginate = 5
     languageName = 'Türkçe'
     title = 'Log101'
     weight = 10
+    staticDir = 'static'
 
   [languages.en]
     disabled = false
@@ -49,6 +51,7 @@ paginate = 5
     languageName = 'English'
     title = 'Log101'
     weight = 20
+    staticDir = 'static'
 
 [taxonomies]
   tag = "tags"
@@ -88,6 +91,7 @@ paginate = 5
     name = "linkedin"
     url = "https://www.linkedin.com/in/furkan-erdem-506548218"
 
+
 [menu]
 
   [[menu.main]]
@@ -99,27 +103,27 @@ paginate = 5
   [[menu.main]]
     identifier = 'projects'
     name = "Projeler"
-    url = "about/"
+    url = "https://github.com/log101?tab=repositories"
     weight = 20
 
   [[menu.main]]
     name = "Github"
-    url = "about/"
+    url = "https://github.com/log101"
     weight = 30
 
   [[menu.main]]
     name = "CV"
-    url = "about/"
+    url = "/furkan_erdem_cv.pdf"
     weight = 40
 
   [[menu.main]]
     identifier = 'stories'
-    name = "Hikayeler"
-    url = "about/"
+    name = "Hikayeler 🚧"
+    url = "#/"
     weight = 50
 
   [[menu.main]]
     identifier = 'running'
-    name = "Koşu"
-    url = "about/"
+    name = "Koşu 🚧"
+    url = "#/"
     weight = 60
