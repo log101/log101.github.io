@@ -96,8 +96,8 @@ staticDir = ['static']
 
   [[menu.main]]
     identifier = 'posts'
-    name = "Yazılar"
-    url = "posts/"
+    name = "Yazılar 🚧"
+    url = "#/"
     weight = 10
 
   [[menu.main]]
