@@ -1,6 +1,6 @@
 <header id="post-header">
         {{ $link := "posts/" }}
-        <a href="{{ $link | absLangURL }}">{{ i18n "back-to-posts" | safeHTML }}</a>
+        <a href="{{ .Section | absLangURL }}">🞀 {{ i18n .Section | safeHTML }}</a>
         <h1 id="post-title">{{ .Title }}</h1>
         <div class="post-meta"><span>{{ time.Format .Site.Params.dateform .Date }}</span></div>
 </header>

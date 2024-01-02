@@ -1,8 +1,10 @@
 - id: backTitle
   translation: "🞀 Anasayfaya Dön"
 - id: posts
-  translation: "Yazılar"
+  translation: "Yazılar 🚧"
 - id: tags
   translation: "Etiketler"
 - id: back-to-posts
   translation: "🞀 Yazılara Dön"
+- id: journals
+  translation: "Hususi"

@@ -117,10 +117,12 @@ staticDir = ['static']
     weight = 40
 
   [[menu.main]]
-    identifier = 'stories'
-    name = "Hikayeler 🚧"
-    url = "#/"
-    weight = 50
+    identifier = 'journals'
+    name = "Hususi"
+    url = "journals/"
+    weight = 45
+    [menu.main.params]
+      id = "caution-menu"
 
   [[menu.main]]
     identifier = 'running'

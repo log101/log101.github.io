@@ -1,7 +1,9 @@
 - id: about
   translation: "About"
 - id: posts
-  translation: "Posts"
+  translation: "Posts 🚧"
+- id: journals
+  translation: "Personal"
 - id: projects
   translation: "Projects"
 - id: stories
